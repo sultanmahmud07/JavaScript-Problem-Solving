@@ -88,47 +88,4 @@ function isLeapYear(year) {
   return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 }
 
-console.log("7. Is 2024 Leap Year?", isLeapYear(2024));
-
-
-/***************************************
-  8. Unique Values
-****************************************/
-const duplicateNumbers = [1, 2, 2, 3, 4, 4, 5];
-
-const uniqueNumbers = [...new Set(duplicateNumbers)];
-console.log("8. Unique Numbers:", uniqueNumbers);
-
-
-/***************************************
-  9. Advanced Sorting
-****************************************/
-const students = [
-  { name: "A", grades: [80, 90, 85] },
-  { name: "B", grades: [70, 75, 72] },
-  { name: "C", grades: [95, 92, 96] }
-];
-
-students.sort((a, b) => {
-  const avgA = a.grades.reduce((s, g) => s + g, 0) / a.grades.length;
-  const avgB = b.grades.reduce((s, g) => s + g, 0) / b.grades.length;
-  return avgB - avgA;
-});
-
-console.log("9. Students Sorted by Average Grade:", students);
-
-
-/***************************************
-  10. Functional Programming - Reduce
-****************************************/
-const products = [
-  { quantity: 2, price: 500 },
-  { quantity: 1, price: 1200 },
-  { quantity: 4, price: 250 }
-];
-
-const totalValue = products.reduce((total, item) => {
-  return total + item.quantity * item.price;
-}, 0);
-
-console.log("10. Total Product Value:", totalValue);
+console.log("7. Is 2024 Leap Year?", isLeapYear(2026));
